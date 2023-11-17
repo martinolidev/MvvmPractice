@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct MyView: View {
+    @ObservedObject var myViewModel = MyViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text(myViewModel.userName)
+            .font(.title)
+        Text(myViewModel.userRank)
+            .font(.title2)
+        Text(myViewModel.userKD)
+            .font(.title3)
     }
 }
 
 #Preview {
-    MyView()
+    ContentView()
 }
