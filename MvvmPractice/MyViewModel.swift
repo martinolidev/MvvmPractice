@@ -8,10 +8,14 @@
 import Combine
 
 class MyViewModel: ObservableObject {
+    @Published var userStats: UserStats = UserStats(username: "", userRank: "", userKD: "")
+
     private let myModel = MyModel()
     
     func getStatsFromModel() -> UserStats {
         let fetchedStats = myModel.fetchUserStats()
+        userStats = fetchedStats
+        return userStats
     }
 
 }
