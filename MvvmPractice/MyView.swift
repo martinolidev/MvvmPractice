@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MyView: View {
+    //Instance of the class to get access to its data!
     @ObservedObject var myViewModel = MyViewModel()
 
     var body: some View {
