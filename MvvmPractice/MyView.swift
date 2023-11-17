@@ -19,6 +19,9 @@ struct MyView: View {
             .bold()
         Text(myViewModel.userStats.userRank)
             .bold()
+        Button("Click me!") {
+            myViewModel.getStatsFromModel()
+        }
     }
 }
 
