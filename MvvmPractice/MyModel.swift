@@ -16,7 +16,7 @@ struct UserStats {
 class MyModel {
     //HTTP request simulation (I HAVE NO IDEA HOW TO DO IT)
     func fetchUserStats() -> UserStats {
-            let stats = UserStats(userName: "LitRyanGosling", userRank: "Platinum", userKD: "1.6")
+        let stats = UserStats(username: "LitRyanGosling", userRank: "Platinum", userKD: "1.6")
             return stats
         }
 }
